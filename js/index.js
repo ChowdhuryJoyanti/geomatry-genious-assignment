@@ -6,26 +6,29 @@ document.getElementById('tringle-calculation').addEventListener('click' ,functio
    const height = document.getElementById('height-input').value;
    const a = 0.5;
    const area = parseFloat(a) * parseFloat(base)  * parseFloat( height);
+   const areaTotal  = area.toFixed(2);
+
+   geomatryCalculation( firstTringle ,areaTotal )
+   console.log(firstTringle , areaTotal)
 
 
-   geomatryCalculation( firstTringle ,area )
-   // console.log(firstTringle , area)
+   // if(isNaN(String)){
+   //    console.log('plese ')
+   // }
 
 
-   
-   // const a = 0.5;
-   // const area = parseFloat(a) * parseFloat(base)  * parseFloat( height);
-   // serial = serial+1
+   // if( base == 'string' || height == 'string'){
+   //    console.log('please give a number')
+   //    //  return alert('please give a number')
+   // }
+   // else if(base = 'negative number' || height == 'negative number'){
+   //    console.log('please give a positive number')
+   // //  return alert('please give me a positive number');
+   // }
+   // else{
+   //      const baseInput = document.getElementById('base-input')   
+   // }
 
-//    if(base == 'string' || height == 'string'){
-//     return alert('please give a number')
-//    }
-//    else if(base = 'negative number' || height == 'negative number'){
-//     return alert('please give me a positive number');
-//    }
-//    else{
-            
-//    }
 // console.log( area)
 //    return area.toFixed;
 //    const result = parseFloat(area).toFixed(2)
@@ -44,9 +47,10 @@ document.getElementById('rectangle-calculation').addEventListener('click',functi
     const width = document.getElementById('width-input').value;
     const length = document.getElementById('length-input').value;
     const area = parseFloat(width) * parseFloat(length);
+    const totalArea = area.toFixed(2);
 
-    geomatryCalculation(secondRectanagle ,area )
-    console.log(area);
+    geomatryCalculation(secondRectanagle ,totalArea )
+    console.log(totalArea);
 });
    // 3rd
 document.getElementById('parallelogram-calculation').addEventListener('click',function(){
@@ -56,8 +60,10 @@ document.getElementById('parallelogram-calculation').addEventListener('click',fu
    const baseInput =  document.getElementById('parallal-input-base').value;
    const heightInput =  document.getElementById('parallal-input-height').value;
    const totalArea = parseFloat( baseInput) * parseFloat(heightInput) ;
-   geomatryCalculation(thirdParallogram ,totalArea )
-   console.log(totalArea);
+   const parallelogramTotalArea = totalArea.toFixed(2);
+
+   geomatryCalculation(thirdParallogram ,parallelogramTotalArea )
+   console.log(parallelogramTotalArea);
 });
 
 // 4th
@@ -68,11 +74,11 @@ document.getElementById('rombus-calculation').addEventListener('click',function(
       const d1 = document.getElementById('input-length-d1').value;
       const d2 = document.getElementById('input-width-d2').value;
       const roumbusMeasure = 0.5;
-      const rombusTotalArea = parseFloat(roumbusMeasure) * parseFloat(d1) * parseFloat(d2);
+      const rombusArea = parseFloat(roumbusMeasure) * parseFloat(d1) * parseFloat(d2);
+      const rohumbusTotalArea =rombusArea.toFixed(2);
+      geomatryCalculation(forthRhombus ,rohumbusTotalArea )
 
-      geomatryCalculation(forthRhombus ,rombusTotalArea )
-
-   console.log(rombusTotalArea);
+      console.log(rohumbusTotalArea);
 });
 
 // 5th
@@ -84,9 +90,9 @@ document.getElementById('pentagon-calculation').addEventListener('click',functio
    const b = document.getElementById('pentagon-b').value;
    const pentagonMeasure = 0.5;
    const pentagonArea =  parseFloat(pentagonMeasure) * parseFloat(p) * parseFloat(b);
-
-   geomatryCalculation(fifthPentagon ,pentagonArea)
-   console.log(pentagonArea);
+   const pentagonTotalArea = pentagonArea.toFixed(2);
+   geomatryCalculation(fifthPentagon ,pentagonTotalArea)
+   console.log(pentagonTotalArea);
 });
 
 // 6th
@@ -98,10 +104,11 @@ document.getElementById('ellipse-calculation').addEventListener('click',function
    const b  = document.getElementById('ellipse-b').value;
    const ellipseMeasure = 3.14;
    const ellipseArea = parseFloat(ellipseMeasure) * parseFloat(a) * parseFloat(b);
+   const ellipseTotalArea = ellipseArea.toFixed(2);
 
-   geomatryCalculation(sixthEllipse ,ellipseArea);
-   // return ellipseArea.toFixed(2)
-   console.log(ellipseArea.toFixed(2));
+   geomatryCalculation(sixthEllipse ,ellipseTotalArea);
+   
+   console.log(ellipseTotalArea);
 
 });
 
@@ -110,14 +117,14 @@ document.getElementById('ellipse-calculation').addEventListener('click',function
 
 
 // common function
-function geomatryCalculation(firstTringle ,area){
+function geomatryCalculation(firstTringle ,areaTotal){
   
    const table = document.getElementById('table-container');
    const tr = document.createElement('tr');
    tr.innerHTML = `
    <td>${serial}</td>
    <td>${firstTringle}</td>
-   <td>${area} cm<sup>2</sup> </td>
+   <td>${areaTotal} cm<sup>2</sup> </td>
    <td>
    <button class="bg-sky-500 text-white rounded-lg px-2 py-2">Convrt to m<sup>2</sup></button>
 
