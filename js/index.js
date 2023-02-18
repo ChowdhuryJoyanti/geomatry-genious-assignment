@@ -132,14 +132,7 @@ function geomatryCalculation(firstTringle ,areaTotal){
 
 
 
-// function validateForm() {
-//    const base = document.getElementById('base-input').value
-//    let x = document.forms["myForm"]["fname"].value;
-//    if (base == "") {
-//      alert("Name must be filled out");
-//      return false;
-//    }
-//  }
+
 
 
 
@@ -158,3 +151,21 @@ function geomatryCalculation(firstTringle ,areaTotal){
 //    )
    
 // console.log(generateRandomColor()); 
+
+function random_bg_color() {
+   var x = Math.floor(Math.random() * 256);
+   var y = Math.floor(Math.random() * 256);
+   var z = Math.floor(Math.random() * 256);
+   var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+console.log(bgColor);
+ 
+   document. getElementById('tringle-first').style.background = bgColor;
+   }
+
+random_bg_color();
+
+
+
+
+
+
