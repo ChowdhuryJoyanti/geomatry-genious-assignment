@@ -132,29 +132,29 @@ function geomatryCalculation(firstTringle ,areaTotal){
 
 
 
-function validateForm() {
-   const base = document.getElementById('base-input').value
-   let x = document.forms["myForm"]["fname"].value;
-   if (base == "") {
-     alert("Name must be filled out");
-     return false;
-   }
- }
+// function validateForm() {
+//    const base = document.getElementById('base-input').value
+//    let x = document.forms["myForm"]["fname"].value;
+//    if (base == "") {
+//      alert("Name must be filled out");
+//      return false;
+//    }
+//  }
 
 
 
- function generateRandomColor(){
-   let maxVal = 0xFFFFFF; // 16777215
-   let randomNumber = Math.random() * maxVal; 
-   randomNumber = Math.floor(randomNumber);
-   randomNumber = randomNumber.toString(16);
-   let randColor = randomNumber.padStart(6, 0);   
-   return `#${randColor.toUpperCase()}`
-}
+//  function generateRandomColor(){
+//    let maxVal = 0xFFFFFF; // 16777215
+//    let randomNumber = Math.random() * maxVal; 
+//    randomNumber = Math.floor(randomNumber);
+//    randomNumber = randomNumber.toString(16);
+//    let randColor = randomNumber.padStart(6, 0);   
+//    return `#${randColor.toUpperCase()}`
+// }
  
-   document.getElementById('tringle-first').addEventListener('mouseover',
+//    document.getElementById('tringle-first').addEventListener('mouseover',
    
-      generateRandomColor
-   )
+//       generateRandomColor
+//    )
    
-console.log(generateRandomColor()); 
+// console.log(generateRandomColor()); 
