@@ -35,74 +35,141 @@
 
         <main>
             <section class="">
-                <div class="mt-5 flex gap-4 w-[70%] bg-cyan-100">
+                <div class="mt-5 flex gap-4 w-[70%]">
                     <div class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Triangle</h2>
+                          <h2 class="card-title font-bold text-3xl">Triangle</h2>
                          <p>Area (A) =0.5 * b * h</p>
 
-                        <div class="flex">
+                        <div class="flex mx-auto">
                             <input id="base-input" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
-                            <p class="p-2 font-semibold text-2xl">cm</p>
+                            <p class="p-2">cm</p>
                             <input  id="height-input" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
-                            <p class="p-2 font-semibold text-2xl">cm</p>
+                            <p class="p-2">cm</p>
                         </div>
 
                           <div class="card-actions">
-                            <button id="tringle-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-6 py-2">Calculate</button>
+                            <button id="tringle-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-28 py-2">Calculate</button>
                             <!-- <button class="btn  bg-sky-500 lowercase">Calculate</button> -->
                           </div>
                         </div>
                       </div>
                     <div class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
-                          <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                          <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Rectangle</h2>
+                          <h2 class="card-title font-bold text-3xl">Rectangle</h2>
                          <p>Area (A) =w * l</p>
 
-                        <div class="flex">
-                            <input id="width-input" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
-                            <p class="p-2 font-semibold text-2xl">cm</p>
-                            <input  id="length-input" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
-                            <p class="p-2 font-semibold text-2xl">cm</p>
+                        <div class="flex mx-auto ">
+                            <input id="width-input" type="text" placeholder="w" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
+                            <p class="p-2">cm</p>
+                            <input  id="length-input" type="text" placeholder="l" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
+                            <p class="p-2">cm</p>
                         </div>
 
                           <div class="card-actions">
-                            <button id="rectangle-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-6 py-2">Calculate</button>
+                            <button id="rectangle-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-28 py-2">Calculate</button>
                             <!-- <button class="btn  bg-sky-500 lowercase">Calculate</button> -->
                           </div>
                         </div>
                       </div>
                     <div class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
-                          <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                          <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Triangle</h2>
-                         <p>Area (A) =0.5 * b * h</p>
-
-                        <div class="flex">
-                            <input id="base-input" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
-                            <p class="p-2 font-semibold text-2xl">cm</p>
-                            <input  id="height-input" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
-                            <p class="p-2 font-semibold text-2xl">cm</p>
+                          <h2 class="card-title font-bold text-3xl">Parallelogram</h2>
+                         <p>Area (A) =b * h</p>
+                        
+                        <div class="flex mx-auto">
+                            <input id="parallal-input-base" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
+                            <p class="p-2">cm</p>
+                            <input  id="parallal-input-height" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
+                            <p class="p-2">cm</p>
                         </div>
 
                           <div class="card-actions">
-                            <button id="tringle-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-6 py-2">Calculate</button>
-                            <!-- <button class="btn  bg-sky-500 lowercase">Calculate</button> -->
+                            <button id="parallelogram-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-28 py-2 ">Calculate</button>
+                        
                           </div>
                         </div>
                       </div>
                 </div>
 
-                <div class="w-[25%] bg-sky-500">
+
+
+                <div class=" flex mt-5 p-5 gap-4">
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold text-3xl">Rhombus</h2>
+                     <p>Area (A) =0.5 * d <sub>1</sub> * d <sub>2</sub> </p>
                     
+                    <div class="flex mx-auto">
+                        <input id="input-length-d1" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
+                        <p class="p-2">cm</p>
+                        <input  id="input-width-d2" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
+                        <p class="p-2">cm</p>
+                    </div>
+
+                      <div class="card-actions">
+                        <button id="rombus-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-28 py-2 ">Calculate</button>
+                        <!-- <button class="btn  bg-sky-500 lowercase">Calculate</button> -->
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold text-3xl" >Pentagon</h2>
+                     <p>Area (A) = 0.5 * p * b  </p>
+                      
+                    <div class="flex mx-auto">
+                        <input id="pentagon-p" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
+                        <p class="p-2">cm</p>
+                        <input  id="pentagon-b" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
+                        <p class="p-2">cm</p>
+                    </div>
+
+                      <div class="card-actions">
+                        <button id="pentagon-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-28 py-2 ">Calculate</button>
+                        <!-- <button class="btn  bg-sky-500 lowercase">Calculate</button> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-bold text-3xl">Ellipse</h2>
+                     <p>Area (A) =ab</p>
+                     <p>a= 10cm ,b = 4cm</p>
+                    
+                    <div class="flex mx-auto">
+                        <input id="ellipse-a" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
+                        <p class="p-2">cm</p>
+                        <input  id="ellipse-b" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
+                        <p class="p-2">cm</p>
+                    </div>
+
+                      <div class="card-actions">
+                        <button id="ellipse-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-28 py-2 ">Calculate</button>
+                        <!-- <button class="btn  bg-sky-500 lowercase">Calculate</button> -->
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </section>
         </main>
