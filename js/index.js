@@ -1,11 +1,12 @@
 let serial = 0;
 document.getElementById('tringle-calculation').addEventListener('click' ,function(){
+   serial += 1
    const firstTringle = document.getElementById('first-tringle').innerText ;  
    const base = document.getElementById('base-input').value;
    const height = document.getElementById('height-input').value;
    const a = 0.5;
    const area = parseFloat(a) * parseFloat(base)  * parseFloat( height);
-   serial = serial+1
+
 
    geomatryCalculation( firstTringle ,area )
    // console.log(firstTringle , area)
@@ -37,6 +38,8 @@ document.getElementById('tringle-calculation').addEventListener('click' ,functio
 });
          // 2nd
 document.getElementById('rectangle-calculation').addEventListener('click',function(){
+   serial += 1
+
    const secondRectanagle = document.getElementById('second-rectangle').innerText;
     const width = document.getElementById('width-input').value;
     const length = document.getElementById('length-input').value;
@@ -47,6 +50,8 @@ document.getElementById('rectangle-calculation').addEventListener('click',functi
 });
    // 3rd
 document.getElementById('parallelogram-calculation').addEventListener('click',function(){
+   serial += 1
+
    const thirdParallogram = document.getElementById('third-parallogram').innerText;
    const baseInput =  document.getElementById('parallal-input-base').value;
    const heightInput =  document.getElementById('parallal-input-height').value;
@@ -57,6 +62,8 @@ document.getElementById('parallelogram-calculation').addEventListener('click',fu
 
 // 4th
 document.getElementById('rombus-calculation').addEventListener('click',function(){
+   serial = serial+1
+
       const forthRhombus = document.getElementById('forth-rhombus').innerText;
       const d1 = document.getElementById('input-length-d1').value;
       const d2 = document.getElementById('input-width-d2').value;
@@ -70,6 +77,8 @@ document.getElementById('rombus-calculation').addEventListener('click',function(
 
 // 5th
 document.getElementById('pentagon-calculation').addEventListener('click',function(){
+   serial = serial+1
+
    const fifthPentagon = document.getElementById('fifth-pentagon').innerText;
    const p = document.getElementById('pentagon-p').value;
    const b = document.getElementById('pentagon-b').value;
@@ -82,6 +91,8 @@ document.getElementById('pentagon-calculation').addEventListener('click',functio
 
 // 6th
 document.getElementById('ellipse-calculation').addEventListener('click',function(){
+   serial = serial+1
+
    const sixthEllipse = document.getElementById('sixth-ellipse').innerText;
    const a = document.getElementById('ellipse-a').value;
    const b  = document.getElementById('ellipse-b').value;
@@ -104,7 +115,7 @@ function geomatryCalculation(firstTringle ,area){
    const table = document.getElementById('table-container');
    const tr = document.createElement('tr');
    tr.innerHTML = `
-   <td>${1}</td>
+   <td>${serial}</td>
    <td>${firstTringle}</td>
    <td>${area} cm<sup>2</sup> </td>
    <td>
