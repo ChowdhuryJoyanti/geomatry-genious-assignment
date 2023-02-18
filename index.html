@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geomatry Genious</title>
+    <!-- tailwind css link -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+                 <!---------------------------------------- Haeader part start------------------------- -->
+    <header>
+        <div class="navbar bg-cyan-100 m-4 mx-auto p-4 rounded-xl">
+            <div class="flex-1">
+                <h1 class="text-5xl font-bold">Interactive</h1> <br>
+                <br>
+                <h2 class=" text-xl"> Geometry Genius</h2>
+
+              <!-- <a class="btn btn-ghost normal-case text-5xl font-bold ">Interactive </a> <br>
+              <a class="btn btn-ghost normal-case text-xl"> Geometry Genius</a> -->
+            </div>
+            <button class="bg-sky-500 text-xl text-white rounded-lg font-bold px-6 py-2">Blog</button>
+
+          </div>
+    </header>
+
+      <!---------------------------------------- header part end------------------------- -->
+
+
+
+                            <!---------------------------------------- main part start------------------------- -->
+
+        <main>
+            <section class="">
+                <div class="mt-5 flex gap-4 w-[70%] bg-cyan-100">
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Triangle</h2>
+                         <p>Area (A) =0.5 * b * h</p>
+
+                        <div class="flex">
+                            <input id="base-input" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
+                            <p class="p-2 font-semibold text-2xl">cm</p>
+                            <input  id="height-input" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
+                            <p class="p-2 font-semibold text-2xl">cm</p>
+                        </div>
+
+                          <div class="card-actions">
+                            <button id="tringle-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-6 py-2">Calculate</button>
+                            <!-- <button class="btn  bg-sky-500 lowercase">Calculate</button> -->
+                          </div>
+                        </div>
+                      </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Rectangle</h2>
+                         <p>Area (A) =w * l</p>
+
+                        <div class="flex">
+                            <input id="width-input" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
+                            <p class="p-2 font-semibold text-2xl">cm</p>
+                            <input  id="length-input" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
+                            <p class="p-2 font-semibold text-2xl">cm</p>
+                        </div>
+
+                          <div class="card-actions">
+                            <button id="rectangle-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-6 py-2">Calculate</button>
+                            <!-- <button class="btn  bg-sky-500 lowercase">Calculate</button> -->
+                          </div>
+                        </div>
+                      </div>
+                    <div class="card w-96 bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Triangle</h2>
+                         <p>Area (A) =0.5 * b * h</p>
+
+                        <div class="flex">
+                            <input id="base-input" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
+                            <p class="p-2 font-semibold text-2xl">cm</p>
+                            <input  id="height-input" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
+                            <p class="p-2 font-semibold text-2xl">cm</p>
+                        </div>
+
+                          <div class="card-actions">
+                            <button id="tringle-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-6 py-2">Calculate</button>
+                            <!-- <button class="btn  bg-sky-500 lowercase">Calculate</button> -->
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="w-[25%] bg-sky-500">
+                    
+                </div>
+            </section>
+        </main>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
