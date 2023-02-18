@@ -11,7 +11,7 @@
 
 </head>
 <body>
-                 <!---------------------------------------- Haeader part start------------------------- -->
+                 <!---------------------------------------- Header part start------------------------- -->
     <header>
         <div class="navbar bg-cyan-100 m-4 mx-auto p-4 rounded-xl">
             <div class="flex-1">
@@ -37,7 +37,7 @@
         <main>
             <section >
                 <div class="mt-5 lg:px-12 flex flex-col md:flex-row  lg:flex-row gap-4 w-[60%]">
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div id="tringle-first" class="card w-96 bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                           <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
                         </figure>
@@ -137,15 +137,15 @@
                      <p>Area (A) =0.5 * d <sub>1</sub> * d <sub>2</sub> </p>
                     
                     <div class="flex mx-auto">
-                        <input id="input-length-d1" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
+                        <input id="input-length-d1" type="text" placeholder="d1" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
                         <p class="p-2">cm</p>
-                        <input  id="input-width-d2" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
+                        <input  id="input-width-d2" type="text" placeholder="d2" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
                         <p class="p-2">cm</p>
                     </div>
 
                       <div class="card-actions">
                         <button id="rombus-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-28 py-2 ">Calculate</button>
-                        <!-- <button class="btn  bg-sky-500 lowercase">Calculate</button> -->
+                    
                       </div>
                     </div>
                   </div>
@@ -160,9 +160,9 @@
                      <p>Area (A) = 0.5 * p * b  </p>
                       
                     <div class="flex mx-auto">
-                        <input id="pentagon-p" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
+                        <input id="pentagon-p" type="text" placeholder="p" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
                         <p class="p-2">cm</p>
-                        <input  id="pentagon-b" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
+                        <input  id="pentagon-b" type="text" placeholder="b" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
                         <p class="p-2">cm</p>
                     </div>
 
@@ -182,15 +182,15 @@
                      <p>a= 10cm ,b = 4cm</p>
                     
                     <div class="flex mx-auto">
-                        <input id="ellipse-a" type="text" placeholder="b" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
+                        <input id="ellipse-a" type="text" placeholder="a" class="input input-bordered input-sm w-28 max-w-xs rounded-lg p-2" />
                         <p class="p-2">cm</p>
-                        <input  id="ellipse-b" type="text" placeholder="h" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
+                        <input  id="ellipse-b" type="text" placeholder="b" class="input input-bordered input-sm  w-28 max-w-xs rounded-lg" />
                         <p class="p-2">cm</p>
                     </div>
 
                       <div class="card-actions">
                         <button id="ellipse-calculation" class="bg-sky-500 text-xl text-white rounded-lg font-bold px-28 py-2 ">Calculate</button>
-                        <!-- <button class="btn  bg-sky-500 lowercase">Calculate</button> -->
+                       
                       </div>
                     </div>
                   </div>

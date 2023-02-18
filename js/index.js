@@ -5,6 +5,15 @@ document.getElementById('tringle-calculation').addEventListener('click' ,functio
    const base = document.getElementById('base-input').value;
    const height = document.getElementById('height-input').value;
    const a = 0.5;
+
+   if( base == '' || height == ''|| base <0 || height < 0  ){
+      return alert('Please enter any valid number');
+  }
+  else{
+
+  }
+
+
    const area = parseFloat(a) * parseFloat(base)  * parseFloat( height);
    const areaTotal  = area.toFixed(2);
 
@@ -12,32 +21,6 @@ document.getElementById('tringle-calculation').addEventListener('click' ,functio
    console.log(firstTringle , areaTotal)
 
 
-   // if(isNaN(String)){
-   //    console.log('plese ')
-   // }
-
-
-   // if( base == 'string' || height == 'string'){
-   //    console.log('please give a number')
-   //    //  return alert('please give a number')
-   // }
-   // else if(base = 'negative number' || height == 'negative number'){
-   //    console.log('please give a positive number')
-   // //  return alert('please give me a positive number');
-   // }
-   // else{
-   //      const baseInput = document.getElementById('base-input')   
-   // }
-
-// console.log( area)
-//    return area.toFixed;
-//    const result = parseFloat(area).toFixed(2)
-  
-//    console.log(result)
-//    console.log(typeof result)
-//    console.log ( typeof area)
-//    const result =parseFloat(area).toFixed(2)
-//    console.log(typeof result)
 });
          // 2nd
 document.getElementById('rectangle-calculation').addEventListener('click',function(){
@@ -46,12 +29,24 @@ document.getElementById('rectangle-calculation').addEventListener('click',functi
    const secondRectanagle = document.getElementById('second-rectangle').innerText;
     const width = document.getElementById('width-input').value;
     const length = document.getElementById('length-input').value;
+
+    if( width == '' || length == ''|| width <0 || length < 0  ){
+      return alert('Please enter any valid number');
+  }
+  else{
+
+  }
+
     const area = parseFloat(width) * parseFloat(length);
     const totalArea = area.toFixed(2);
 
     geomatryCalculation(secondRectanagle ,totalArea )
     console.log(totalArea);
+  
 });
+
+
+
    // 3rd
 document.getElementById('parallelogram-calculation').addEventListener('click',function(){
    serial += 1
@@ -132,4 +127,34 @@ function geomatryCalculation(firstTringle ,areaTotal){
    
    `;
    table.appendChild(tr);
+};
+
+
+
+
+function validateForm() {
+   const base = document.getElementById('base-input').value
+   let x = document.forms["myForm"]["fname"].value;
+   if (base == "") {
+     alert("Name must be filled out");
+     return false;
+   }
+ }
+
+
+
+ function generateRandomColor(){
+   let maxVal = 0xFFFFFF; // 16777215
+   let randomNumber = Math.random() * maxVal; 
+   randomNumber = Math.floor(randomNumber);
+   randomNumber = randomNumber.toString(16);
+   let randColor = randomNumber.padStart(6, 0);   
+   return `#${randColor.toUpperCase()}`
 }
+ 
+   document.getElementById('tringle-first').addEventListener('mouseover',
+   
+      generateRandomColor
+   )
+   
+console.log(generateRandomColor()); 
